@@ -22,6 +22,8 @@
     --white: #fff;
     --gray: #1a1c22;
     --gray-200: #2c2a2a;
+    --gray-600: #111317;
+    --gray-800: #25262c;
     --gray-dark: #343a40;
     --primary: #3490dc;
     --secondary: #6c757d;
@@ -535,12 +537,14 @@ mark,
     font-size: 90%;
     color: #6c757d;
 }
+
 .footer {
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
 }
 
 code {
@@ -7172,6 +7176,12 @@ button.bg-light:focus {
 }
 .bg-gray-200 {
     background-color: var(--gray-200) !important;
+}
+.bg-gray-600 {
+    background-color: var(--gray-600) !important;
+}
+.bg-gray-800 {
+    background-color: var(--gray-800) !important;
 }
 .bg-green {
     background-color: var(--green) !important;

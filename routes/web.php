@@ -13,11 +13,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/frontend', function () {
     return view('web.login');
 });
-Route::get('/dashboard', function () {
-    return view('web.index');
+Route::get('/frontend/register', function () {
+    return view('web.masyarakat.register');
+});
+Route::get('/frontend/masyarakat', function () {
+    return view('web.masyarakat.index');
+});
+Route::get('/frontend/masyarakat/data_pengaduan', function () {
+    return view('web.masyarakat.pengaduan');
+});
+Route::get('/frontend/masyarakat/data_pengaduan/detail', function () {
+    return view('web.masyarakat.detail');
+});
+Route::get('/petugas/dashboard', function () {
+    return view('web.petugas.index');
+});
+Route::get('/petugas/pengaduan', function () {
+    return view('web.petugas.pengaduan.index');
+});
+
+Route::get('/', function () {
+    return view('welcome');
 });
 
 Auth::routes();
